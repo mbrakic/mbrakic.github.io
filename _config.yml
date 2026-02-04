@@ -1,6 +1,6 @@
 title: My Jekyll Site
 description: Learning to use GitHub Actions and Jekyll
-theme: minima
+remote-theme: mmistakes/minimal-mistakes
 plugins:
-  - jekyll-feed
+  - jekyll-remote-theme
   - jekyll-seo-tag
