@@ -1,1 +1,6 @@
-theme: jekyll-theme-minimal
+title: My Jekyll Site
+description: Learning to use GitHub Actions and Jekyll
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
