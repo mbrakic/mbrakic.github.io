@@ -1,50 +1,76 @@
 # --- SITE SETTINGS ---
-title: Milan's personal page
+title: Milan's Personal Page
 description: Learning to use GitHub Actions and Jekyll
 url: "https://mbrakic.github.io"
-baseurl: "" # Keep empty for a user site (username.github.io)
+baseurl: "" 
+lang: "en-US"
 
 # --- THEME SETUP ---
-# CRITICAL FIX: Use an underscore (_), not a hyphen (-)
 remote_theme: mmistakes/minimal-mistakes
 minimal_mistakes_skin: "sunrise" 
 
 # --- FEATURES ---
-# CRITICAL FIX: Fixed spelling from "breadcrumns" to "breadcrumbs"
-breadcrumbs: true 
-search: true
+breadcrumbs: true           # Shows "Home > Blog > Post Title" at the top
+search: true                # Enables the search magnifying glass
+search_full_content: true   # Search looks at body text, not just titles
+words_per_minute: 200       # Adjusts the "3 min read" calculation
 
-# --- AUTHOR ---
+# --- AUTHOR (Sidebar) ---
 author:
   name: "Milan"
   bio: "Learning to use GitHub Actions and Jekyll"
-  # You can add 'avatar: /path/to/image.jpg' here later
+  location: "London, UK"    # Optional: Adds location pin
+  links:                    # These appear as clickable icons in your sidebar
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/mbrakic"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://linkedin.com/in/yourprofile"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:your-email@example.com"
 
 # --- PLUGINS ---
-# These are required for the theme to function correctly on GitHub Pages
 plugins:
-  - jekyll-remote-theme # REQUIRED: Downloads the theme
-  - jekyll-include-cache # REQUIRED: Speeds up the build
-  - jekyll-seo-tag       # HIGHLY RECOMMENDED: Better Google results
-  - jekyll-paginate      # RECOMMENDED: Allows page 1, page 2 navigation
-  - jekyll-sitemap       # RECOMMENDED: Helps search engines index your site
-  - jekyll-feed          # OPTIONAL: Creates an RSS feed
+  - jekyll-remote-theme 
+  - jekyll-include-cache 
+  - jekyll-seo-tag       
+  - jekyll-paginate      
+  - jekyll-sitemap       
+  - jekyll-feed          
+  - jekyll-gist          # Allows you to embed GitHub Gists nicely
 
-# --- PAGINATION SETTINGS ---
+# --- PAGINATION ---
 paginate: 5
 paginate_path: /page:num/
 
 # --- DEFAULTS ---
-# This ensures every new post automatically gets these settings
+# This section applies settings to all posts/pages automatically so you don't have to
 defaults:
   - scope:
       path: ""
       type: posts
     values:
       layout: single
+      author_profile: true # Shows your sidebar bio on every post
+      read_time: true      # "5 min read"
+      comments: false      # Set to true if you add Giscus/Disqus later
+      share: true          # Social share buttons at bottom of posts
+      related: true        # Shows "You might also like" at bottom
+      toc: true            # Table of Contents
+      toc_sticky: true     # ToC follows you as you scroll down
+      toc_label: "Jump to" 
+
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
       author_profile: true
-      show_date: true
-      read_time: true
-      comments: true
-      share: true
-      related: true
+      toc: true            # Even static pages get a Table of Contents
+
+# --- NAVIGATION ---
+# This tells the theme to look for navigation links in _data/navigation.yml
+# (See the "Crucial Step" below to make this work)
+locale: "en-US"
