@@ -1,25 +1,21 @@
 ----
+---
 layout: home
 title: Home
 ---
 
-## Welcome to my Jekyll Site
+## Welcome to my Personal Website
 
-This is a paragraph written in **Markdown**. It's much easier to write than HTML.
+Hi! I'm building this site using Jekyll and GitHub Pages. This is the main landing page where I'll share my projects and thoughts.
 
-* List item 1
-* List item 2
+### Quick Links
+* [My Projects](https://github.com/mbrakic?tab=repositories)
+* [About Me](#)
 
-[Link to Google](https://google.com)--
-layout: home
-title: Home
----
-
-## Welcome to my Jekyll Site
-
-This is a paragraph written in **Markdown**. It's much easier to write than HTML.
-
-* List item 1
-* List item 2
-
-[Link to Google](https://google.com)
+### Recent Posts
+# note that files must follow YYYY-MM-DD-title.md
+<ul>
+  {% for post in site.posts %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+</ul>
