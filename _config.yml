@@ -74,3 +74,6 @@ defaults:
 # This tells the theme to look for navigation links in _data/navigation.yml
 # (See the "Crucial Step" below to make this work)
 locale: "en-US"
+
+include:
+  - _pages
