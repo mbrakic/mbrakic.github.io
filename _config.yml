@@ -1,19 +1,41 @@
-title: Milan's personal page 
+# --- SITE SETTINGS ---
+title: Milan's personal page
 description: Learning to use GitHub Actions and Jekyll
 url: "https://mbrakic.github.io"
-baseurl: ""
-remote-theme: mmistakes/minimal-mistakes
+baseurl: "" # Keep empty for a user site (username.github.io)
+
+# --- THEME SETUP ---
+# CRITICAL FIX: Use an underscore (_), not a hyphen (-)
+remote_theme: mmistakes/minimal-mistakes
 minimal_mistakes_skin: "sunrise" 
 
+# --- FEATURES ---
+# CRITICAL FIX: Fixed spelling from "breadcrumns" to "breadcrumbs"
+breadcrumbs: true 
+search: true
+
+# --- AUTHOR ---
 author:
   name: "Milan"
   bio: "Learning to use GitHub Actions and Jekyll"
+  # You can add 'avatar: /path/to/image.jpg' here later
 
+# --- PLUGINS ---
+# These are required for the theme to function correctly on GitHub Pages
 plugins:
-  - jekyll-remote-theme
-  - jekyll-seo-tag 
-  - jekyll-include-cache
+  - jekyll-remote-theme # REQUIRED: Downloads the theme
+  - jekyll-include-cache # REQUIRED: Speeds up the build
+  - jekyll-seo-tag       # HIGHLY RECOMMENDED: Better Google results
+  - jekyll-paginate      # RECOMMENDED: Allows page 1, page 2 navigation
+  - jekyll-sitemap       # RECOMMENDED: Helps search engines index your site
+  - jekyll-feed          # OPTIONAL: Creates an RSS feed
 
+# --- PAGINATION SETTINGS ---
+paginate: 5
+paginate_path: /page:num/
+
+# --- DEFAULTS ---
+# This ensures every new post automatically gets these settings
 defaults:
   - scope:
       path: ""
@@ -21,3 +43,8 @@ defaults:
     values:
       layout: single
       author_profile: true
+      show_date: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
