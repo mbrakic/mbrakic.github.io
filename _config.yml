@@ -1,6 +1,23 @@
-title: My Jekyll Site
+title: Milan's personal page 
 description: Learning to use GitHub Actions and Jekyll
+url: "https://mbrakic.github.io"
+baseurl: ""
 remote-theme: mmistakes/minimal-mistakes
+minimal_mistakes_skin: "sunrise" 
+
+author:
+  name: "Milan"
+  bio: "Learning to use GitHub Actions and Jekyll"
+
 plugins:
   - jekyll-remote-theme
   - jekyll-seo-tag 
+  - jekyll-include-cache
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
