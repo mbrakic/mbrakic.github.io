@@ -1,6 +1,6 @@
 # --- SITE SETTINGS ---
-title: Milan's Personal Page
-description: Learning to use GitHub Actions and Jekyll
+title: mbrakic
+description: My personal webpage
 url: "https://mbrakic.github.io"
 baseurl: "" 
 lang: "en-US"
@@ -17,8 +17,8 @@ words_per_minute: 200       # Adjusts the "3 min read" calculation
 
 # --- AUTHOR (Sidebar) ---
 author:
-  name: "Milan"
-  bio: "Learning to use GitHub Actions and Jekyll"
+  name: "Milan Rakic"
+  bio: "My personal webpage; work and thoughts"
   location: "London, UK"    # Optional: Adds location pin
   links:                    # These appear as clickable icons in your sidebar
     - label: "GitHub"
