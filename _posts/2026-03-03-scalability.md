@@ -110,13 +110,13 @@ But let's make some estimates anyway.
 We've seen that frontier models take about 10^25 FLOPs to train. From what I've
 seen, it takes about 2N FLOPs per generated token (N is number of active
 parameters) and let's assume parameter size is a nice round 1 trillion, with fewer
-than a trillion active at any time due to MoE architecture, let's assume 100
-million. This means about $2 \times 10^{11}$ FLOPs per token. 
+than a trillion active at any time due to MoE architecture, let's assume 10
+billion. This means about $2 \times 10^{10}$ FLOPs per token. 
 
 Standard model outputs may be about 500 tokens, but reasoning outputs,
 particularly for complex tasks, may reach 10,000 to 50,000 tokens. At 10,000
-tokens, a single query costs $2 \times 10^{16}$ FLOPs. To reach the training
-compute threshold, a model needs to serve approximately 500 million complex
+tokens, a single query costs $2 \times 10^{15}$ FLOPs. To reach the training
+compute threshold, a model needs to serve approximately 5 billion complex
 queries. For a model deployed on a global scale, and when considering the many
 more frequent simple queries, the constant uses of "read this long document and
 answer this simple question", I suspect inference outweighs compute in a matter
