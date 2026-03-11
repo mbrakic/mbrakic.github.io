@@ -7,7 +7,7 @@ lang: "en-US"
 
 # --- THEME SETUP ---
 remote_theme: mmistakes/minimal-mistakes
-minimal_mistakes_skin: "catppuccin-latte" 
+minimal_mistakes_skin: "air" 
 
 # --- FEATURES ---
 breadcrumbs: true           # Shows "Home > Blog > Post Title" at the top
