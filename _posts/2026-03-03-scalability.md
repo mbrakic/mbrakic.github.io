@@ -130,8 +130,8 @@ above.
 So, if we're now expecting that a 10x increase in model capability comes at a
 100x to 1000x increase in cost (and to reiterate, this estimate completely
 ignores the costs of constructing data centers and paying for good data), maybe
-we should ask if this really is the exponential growth that we've been looking
-for. 
+we should ask if this should be the way forward. Perhaps we need to pivot to
+models with better token efficiency but lower overall performance? 
 
 
 
