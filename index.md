@@ -1,12 +1,8 @@
-## Welcome to my Personal Website
-
 Hello! My name's Milan, I'm a physicist turned AI safety researcher based in
 London. 
 
 I'm using this site as a kind of landing page for my work. If you're
-interested in what I'm doing please see my work here! 
-
-For blogs and musings, please go here! 
+interested in what I'm doing please reach out!
 
 ### Quick Links
 * [My github](https://github.com/mbrakic?tab=repositories)
